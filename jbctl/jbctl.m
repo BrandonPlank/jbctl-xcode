@@ -23,6 +23,7 @@
 #include "unc0ver.h"
 
 bool initialized = false;
+bool tfp0_ = true;
 FILE *log_file = NULL;
 uint64_t offset_options = 0;
 uint64_t offset_cr_flags = 0;
@@ -48,6 +49,7 @@ static struct option long_options[] = {
     {"help",    no_argument,       0, 'h'},
     {"all",     no_argument,       0, 'a'},
     {"quiet",   no_argument,       0, 'q'},
+    //{"tfp0",    no_argument,       0, 't'},
     {0,         0,                 0,  0 }
 };
 
@@ -57,6 +59,7 @@ void usage(void)
     printf("\t-h, --help         Print this help\n");
     printf("\t-a, --all          Show all saved offsets\n");
     printf("\t-q, --quiet        Don't print names of offsets\n");
+    //printf("\t-t, --tfp0         Shows the tfp0 port\n");
     if (offset_options) printf("\t-u, --unrestrict   Get/Set unrestrict settings instead of offsets\n");
 }
 
@@ -270,6 +273,7 @@ int main(int argc, char * const* argv) {
                 usage();
                 exit(0);
                 break;
+                
             case 'q':
                 quiet = true;
                 break;
@@ -336,6 +340,7 @@ int main(int argc, char * const* argv) {
                     exit(1);
                 }
             }
+            
         } else {
             if (mode == MODE_OFFSETS) {
                 if (!quiet) printf("%s=", argv[i]);
@@ -379,6 +384,7 @@ int main(int argc, char * const* argv) {
             if (mode == MODE_OFFSETS) {
                 blob_size = export_cache_blob(&blob);
                 offset_entry_t *np;
+                printf("tfp0=0x%x\n", tfp0);
                 TAILQ_FOREACH(np, &blob->cache, entries) {
                     if (!quiet) printf("%s=", np->name);
                     printf("0x%llx\n", np->addr);
