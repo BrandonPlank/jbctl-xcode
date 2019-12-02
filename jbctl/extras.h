@@ -1,5 +1,5 @@
-#ifndef _UNC0VER_OPTIONS
-#define _UNC0VER_OPTIONS
+#ifndef _EXTRAS_OPTIONS
+#define _EXTRAS_OPTIONS
 
 #define OPT(x) (offset_options?((rk64(offset_options) & OPT_ ##x)?true:false):false)
 #define SETOPT(x, val) (offset_options?wk64(offset_options, val?(rk64(offset_options) | OPT_ ##x):(rk64(offset_options) & ~OPT_ ##x)):0)

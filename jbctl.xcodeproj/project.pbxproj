@@ -29,7 +29,7 @@
 		882A53E22394598C0020C0B9 /* jbctl.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = jbctl.xml; sourceTree = "<group>"; };
 		882A53E32394599D0020C0B9 /* offsetcache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = offsetcache.h; sourceTree = "<group>"; };
 		882A53E4239459A20020C0B9 /* offsetcache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = offsetcache.c; sourceTree = "<group>"; };
-		882A53E6239459AB0020C0B9 /* unc0ver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unc0ver.h; sourceTree = "<group>"; };
+		882A53E6239459AB0020C0B9 /* extras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extras.h; sourceTree = "<group>"; };
 		882A53E723945B310020C0B9 /* mach_vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_vm.h; sourceTree = "<group>"; };
 		882A53E823945CA70020C0B9 /* jbctl.c.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = jbctl.c.o; sourceTree = "<group>"; };
 		882A53EA23945CB00020C0B9 /* offsetcache.c.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = offsetcache.c.o; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				882A53EA23945CB00020C0B9 /* offsetcache.c.o */,
 				882A53E823945CA70020C0B9 /* jbctl.c.o */,
 				882A53E723945B310020C0B9 /* mach_vm.h */,
-				882A53E6239459AB0020C0B9 /* unc0ver.h */,
+				882A53E6239459AB0020C0B9 /* extras.h */,
 				882A53E4239459A20020C0B9 /* offsetcache.c */,
 				882A53E32394599D0020C0B9 /* offsetcache.h */,
 				882A53E22394598C0020C0B9 /* jbctl.xml */,

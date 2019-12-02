@@ -20,7 +20,7 @@
 #include <getopt.h>
 
 #include "offsetcache.h"
-#include "unc0ver.h"
+#include "extras.h"
 
 bool initialized = false;
 bool tfp0_ = true;
