@@ -150,7 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/brandonplank/Downloads/ldid/ldid2 -S/Users/brandonplank/Desktop/Tools/jbctl/jbctl/jbctl.xml /Users/brandonplank/Library/Developer/Xcode/DerivedData/jbctl-ahohpfxxvdjbdmbmaryxrkaleubv/Build/Products/Debug-iphoneos/jbctl  \n\n\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/brandonplank/Downloads/ldid/ldid2 -S/Users/brandonplank/Desktop/jbctl-xcode/jbctl/jbctl.xml /Users/brandonplank/Library/Developer/Xcode/DerivedData/jbctl-hfvhbaitrrofexgzzitbnhvnpovz/Build/Products/Debug-iphoneos/jbctl\n\n\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

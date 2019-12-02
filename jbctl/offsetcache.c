@@ -120,7 +120,7 @@ size_t export_cache_blob(struct cache_blob **newblob)
 void blob_rebase(struct cache_blob *blob, uint64_t old_base, uint64_t new_base)
 {   
 #ifdef DEBUG
-    printf("Rebasing blob from %llx to %llx\n", old_base, new_base);
+    //printf("Rebasing blob from %llx to %llx\n", old_base, new_base);
 #endif
     struct offset_cache *local_cache = &(blob->cache);
     REBASE(local_cache->tqh_last, old_base, new_base);
@@ -251,7 +251,7 @@ int main()
         printf("Entry %p\n\taddr: 0x%llx\n\tname: %s\n", np, np->addr, np->name);
     }
     printf("\n");
-    printf("Rebasing blob to \"kernel\" address %p\n", (char*)0xdeadbeefdead0000);
+    //printf("Rebasing blob to \"kernel\" address %p\n", (char*)0xdeadbeefdead0000);
     blob_rebase(blob, (uint64_t)blob, 0xdeadbeefdead0000);
     printf("Blob\tsize: %lx\n"
                "\tbegin: %p\n"
